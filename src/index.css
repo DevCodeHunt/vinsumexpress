@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  *,
+  *::before,
+  *::after {
+    @apply m-0 p-0 box-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply w-full h-full bg-white overflow-x-hidden;
+  }
+
+  .navbar {
+    @apply w-full sticky top-0 left-0 bg-white border-b border-gray-300 z-50 px-4;
+  }
+
+  section {
+    @apply py-20;
+  }
+
+  button {
+    @apply rounded-md flex items-center justify-center gap-2 text-sm px-4 py-2;
+  }
+
+  .container {
+    @apply px-4  w-full;
+  }
+
+}
