@@ -19,15 +19,15 @@ const Header = () => {
       <header
         className={`navbar`}
       >
-        <div className="flex items-center justify-between sm:flex-row flex-row-reverse py-2 gap-4">
-          <button onClick={handleToggleMenu} className="lg:hidden inline">
+        <div className="flex items-center justify-between sm:flex-row flex-row-reverse py-2 gap-4 box">
+          <button onClick={handleToggleMenu} className="xl:hidden inline">
             <AlignJustify size={28} />
           </button>
           <Link to="/">
             <img src="/images/logo.svg" alt="logo" className="md:w-48 w-40" />
           </Link>
           {/* Desktop */}
-          <nav className="lg:block hidden">
+          <nav className="xl:block hidden">
             <ul className="flex items-center space-x-6 list-none">
               {menuItemsData.map((menu, index) => {
                 return (

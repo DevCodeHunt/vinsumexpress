@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -17,23 +18,23 @@
   }
 
   body {
-    @apply w-full h-full bg-white overflow-x-hidden;
+    @apply w-full h-full overflow-x-hidden bg-[#EBEEE9]/30;
   }
 
   .navbar {
-    @apply w-full sticky top-0 left-0 bg-white border-b border-gray-300 z-50 px-4;
+    @apply w-full sticky top-0 left-0 bg-white border-b border-gray-300 z-50 px-4 shadow !drop-shadow-sm;
   }
 
   section {
-    @apply py-20;
+    @apply py-20 px-4;
   }
 
   button {
     @apply rounded-md flex items-center justify-center gap-2 text-sm px-4 py-2;
   }
 
-  .container {
-    @apply px-4  w-full;
+  .box {
+    @apply xl:px-12 lg:px-10 md:px-8 sm:px-6 px-4 w-full mx-auto;
   }
 
 }

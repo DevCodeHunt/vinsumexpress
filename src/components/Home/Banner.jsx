@@ -8,7 +8,7 @@ const Banner = () => {
 
   const handleToggleTab = useCallback((tab) => setActiveTab(tab), []);
   return (
-    <div className=" px-4 py-8 space-y-6">
+    <div className="py-8 space-y-6 box">
       <div className="flex items-center gap-2">
         {tabs.map((tab, i) => (
           <button
@@ -27,7 +27,7 @@ const Banner = () => {
       </div>
 
       {activeTab === "functions" && (
-        <div className="w-full relative rounded-xl px-8  bg-gradient-to-r bg-blue-700 to-blue-200 text-white h-fit flex lg:flex-row flex-col">
+        <div className="w-full relative rounded-xl px-8  bg-gradient-to-r bg-blue-700 to-blue-200 text-white h-fit flex xl:flex-row flex-col">
           <div className="max-w-[400px] w-full py-12">
             <ul className="list-disc px-6 space-y-4 list-outside marker:text-primary">
               <li className="md:text-base text-sm">
@@ -65,9 +65,9 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="relative lg:flex-1 lg:py-0 pb-12 flex items-center justify-center">
-            <div className="w-[300px] h-[80vh] lg:absolute -top-12 lg:left-1/2 lg:-translate-x-1/2 bg-gray-200 rounded-3xl z-10 mx-auto translate-x-0">
-            <img src="https://cdn.pixabay.com/photo/2024/09/02/15/06/sunset-9017041_1280.jpg" alt="mobile" className="w-full h-full rounded-3xl object-cover absolute inset-0" />
+          <div className="relative xl:flex-1 xl:py-0 pb-12 flex items-center justify-center">
+            <div className="w-[300px] h-[84vh] xl:absolute -top-12 xl:left-1/2 xl:-translate-x-1/2 bg-gray-200 rounded-3xl z-10 mx-auto translate-x-0">
+            <img src="https://cdn.pixabay.com/photo/2024/09/02/15/06/sunset-9017041_1280.jpg" alt="mobile" className="w-full h-full rounded-3xl object-cover absolute inset-0 z-[1]" />
               {/* circle */}
               <div className="md:block hidden w-[180px] h-[180px] rounded-full bg-neutral-50 opacity-30 absolute -left-10 top-10 -z-2"></div>
               <div className="md:block hidden w-[220px] h-[220px] rounded-full bg-neutral-50 opacity-20 -z-2 absolute -left-40 bottom-4"></div>
@@ -76,15 +76,15 @@ const Banner = () => {
 
               {/* Left Box */}
               <div className="md:block hidden absolute top-28  h-[65%] bg-none border-2 border-white rounded-xl w-[27.3rem] -left-16"></div>
-              <div className="md:block hidden h-[240px] w-56 bg-white rounded-xl absolute  top-1/2 -translate-y-1/2 -left-44">
+              <div className="md:block hidden h-[240px] w-56 bg-white rounded-xl absolute  top-1/2 -translate-y-1/2 -left-44 z-10">
                 <div className="w-4 h-4 rounded-full bg-white shadow flex items-center justify-center absolute -top-2 left-1/2 -translate-x-1/2">
                   <div className="w-2 h-2 rounded-full bg-black animate-pulse"></div>
                 </div>
               </div>
 
-              <div className="md:block hidden h-24 w-60 rounded-xl bg-white absolute -right-48 top-[4.5rem]"></div>
+              <div className="md:block hidden h-24 w-60 rounded-xl bg-white absolute -right-48 top-[4.5rem] z-10"></div>
 
-              <div className="md:block hidden w-60 h-28 rounded-xl bg-white absolute -right-48 bottom-16">
+              <div className="md:block hidden w-60 h-28 rounded-xl bg-white absolute -right-48 bottom-16 z-10">
                 <div className="w-4 h-4 rounded-full bg-white shadow flex items-center justify-center absolute -top-2 left-1/2 -translate-x-1/2">
                   <div className="w-2 h-2 rounded-full bg-black animate-pulse"></div>
                 </div>
@@ -97,7 +97,7 @@ const Banner = () => {
       )}
 
       {activeTab === "tools" && (
-        <div>
+        <div className="h-[70vh] bg-white rounded-xl p-4 drop-shadow-sm shadow">
           <h1 className="text-2xl font-semibold">Tools</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
@@ -107,7 +107,7 @@ const Banner = () => {
       )}
 
       {activeTab === "guide" && (
-        <div>
+        <div className="h-[70vh] bg-white rounded-xl p-4 drop-shadow-sm shadow">
           <h1 className="text-2xl font-semibold">Guide</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel

@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         monotserrat: ["Montserrat", "monospace"],
+        lato: ["Lato", "sans-serif"],
       },
     },
   },

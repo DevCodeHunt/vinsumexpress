@@ -21,8 +21,8 @@ import CountUp from "react-countup";
 
 const Statistics = () => {
   return (
-    <section className="md:pt-28 px-4">
-      <div className="max-w-6xl w-full bg-white rounded-xl  mx-auto flex border">
+    <section className="md:pt-40 px-4">
+      <div className="max-w-6xl w-full bg-white shadow drop-shadow-2xl rounded-xl  mx-auto flex border">
         <div className="w-14 h-auto p-2 border-r px-2">
           <div className="w-10 h-10 bg-primary text-white flex items-center justify-center rounded-xl font-semibold text-xl mx-auto">
             V
@@ -49,9 +49,9 @@ const Statistics = () => {
           </div>
         </div>
         <div className="flex-1">
-          <div className="flex items-center justify-between w-full p-4 border-b">
-            <h4 className="font-bold text-lg">Demographics Report</h4>
-            <div className="flex items-center gap-2">
+          <div className="flex sm:items-center justify-between sm:flex-row flex-col sm:gap-0 gap-4 w-full p-4 border-b">
+            <h4 className="font-bold sm:text-lg">Demographics Report</h4>
+            <div className="flex items-center gap-2 flex-wrap">
               <button className="flex items-center  border w-10 h-10 justify-center rounded-full">
                 <Search size={18} className="text-gray-600" />
               </button>
@@ -69,8 +69,8 @@ const Statistics = () => {
           <div className="px-4">
             <StatisticsGrid />
 
-            <div className="p-4 border rounded-xl mt-6 flex items-center justify-between">
-              <div className="flex items-center gap-2">
+            <div className="p-4 border rounded-xl mt-6 flex sm:items-center justify-between gap-4 sm:flex-row flex-col">
+              <div className="flex items-center sm:justify-normal justify-between gap-2">
                 <p className="text-lg font-semibold">Traget Demographics</p>
                 <div className="flex items-center border border-primary px-4 py-1 rounded-full gap-2">
                   <div className="w-2 h-2 rounded-full bg-primary"></div>
@@ -88,10 +88,10 @@ const Statistics = () => {
               </div>
             </div>
 
-            <div className="flex">
-              <div className="flex-1 relative"></div>
+            <div className="flex sm:py-0 py-4">
+              <div className="flex-1 relative sm:block hidden"></div>
 
-              <div className="w-72 border-l h-full px-2 py-4">
+              <div className="sm:w-72 w-full sm:border-l sm:border-0 border h-full px-2 py-4 sm:rounded-none rounded-xl">
                 <h2 className="text-2xl font-bold">
                   <CountUp
                     start={0}
@@ -123,7 +123,7 @@ export default Statistics;
 
 const StatisticsGrid = () => {
   return (
-    <div className="grid lg:grid-cols-4 gap-4 py-4">
+    <div className="grid lg:grid-cols-4  sm:grid-cols-2 grid-cols-1 gap-4 py-4">
       <StatisticCard
         title="Total branch"
         value={75}
