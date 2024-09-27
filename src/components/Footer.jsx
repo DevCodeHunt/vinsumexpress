@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="py-8 grid md:grid-cols-5 sm:grid-cols-3 min-[468px]:grid-cols-2 grid-cols-1 gap-6">
+        <div className="py-8 grid md:grid-cols-5 sm:grid-cols-3  grid-cols-2 gap-6">
           <div>
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2 mt-2">

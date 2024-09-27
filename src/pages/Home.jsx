@@ -228,7 +228,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="bg-[#7F50E3] grid grid-cols-2 gap-4 !px-6 py-8 text-white pb-14 box rounded-xl rounded-tl-[3rem] my-8">
+        <div className="bg-[#7F50E3] grid sm:grid-cols-2 gap-4 !px-6 py-8 text-white pb-14 box rounded-xl rounded-tl-[3rem] my-8">
           <div className="space-y-4">
             <h1 className="sm:text-2xl text-xl font-semibold">
               Create a prototype to <br />
