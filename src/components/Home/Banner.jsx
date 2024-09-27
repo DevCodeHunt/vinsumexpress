@@ -66,7 +66,7 @@ const Banner = () => {
           </div>
 
           <div className="relative lg:flex-1 lg:py-0 pb-12 flex items-center justify-center">
-            <div className="w-[300px] h-[90vh] lg:absolute -top-12 lg:left-1/2 lg:-translate-x-1/2 bg-gray-200 rounded-3xl z-10 mx-auto translate-x-0">
+            <div className="w-[300px] h-[80vh] lg:absolute -top-12 lg:left-1/2 lg:-translate-x-1/2 bg-gray-200 rounded-3xl z-10 mx-auto translate-x-0">
             <img src="https://cdn.pixabay.com/photo/2024/09/02/15/06/sunset-9017041_1280.jpg" alt="mobile" className="w-full h-full rounded-3xl object-cover absolute inset-0" />
               {/* circle */}
               <div className="md:block hidden w-[180px] h-[180px] rounded-full bg-neutral-50 opacity-30 absolute -left-10 top-10 -z-2"></div>

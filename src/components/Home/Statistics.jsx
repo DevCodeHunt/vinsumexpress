@@ -21,7 +21,7 @@ import CountUp from "react-countup";
 
 const Statistics = () => {
   return (
-    <section className="md:pt-36 px-4">
+    <section className="md:pt-28 px-4">
       <div className="max-w-6xl w-full bg-white rounded-xl  mx-auto flex border">
         <div className="w-14 h-auto p-2 border-r px-2">
           <div className="w-10 h-10 bg-primary text-white flex items-center justify-center rounded-xl font-semibold text-xl mx-auto">
