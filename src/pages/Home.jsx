@@ -25,7 +25,7 @@ const Home = () => {
             can explore endless possibilities and push the boundaries of design.
           </p>
 
-          <div className="flex items-center justify-center gap-4 my-6">
+          <div className="flex items-center justify-center gap-4 my-6 min-[367px]:flex-nowrap flex-wrap">
             <button className="primary-btn">Sign up, its free</button>
 
             <button>
@@ -56,7 +56,7 @@ const Home = () => {
       <section className="py-24 px-4 ">
         <div className="box relative rounded-xl !px-8  bg-gradient-to-r bg-blue-700 to-blue-200 text-white h-fit flex xl:flex-row flex-col ">
           <div className="max-w-[400px] w-full py-12">
-            <ul className="list-disc px-6 space-y-4 list-outside marker:text-primary">
+            <ul className="list-disc xl:px-6 pl-4 space-y-4 list-outside marker:text-primary">
               <li className="md:text-base text-sm">
                 Registering on the platform is the first step in creating a
                 course
@@ -80,7 +80,7 @@ const Home = () => {
                 </h1>
               </div>
 
-              <div className="flex items-center gap-4 mt-4">
+              <div className="flex items-center gap-4 min-[428px]:flex-row flex-col min-[428px]:mt-4 mt-8">
                 <button className="px-6 py-3 font-medium bg-black text-white text-sm">
                   Start 7-day trial
                 </button>
@@ -190,9 +190,9 @@ const Home = () => {
           <div className="md:w-1/2 w-full"></div>
         </div>
 
-        <div className="box grid md:grid-cols-2 gap-4 my-8">
-          <div className="rounded-xl bg-white shadow drop-shadow-md p-4 h-auto">
-            <div>
+        <div className="box !px-0 grid md:grid-cols-2 grid-cols-1 gap-4 my-8">
+          <div className="rounded-xl bg-white w-full shadow drop-shadow-md p-4 h-auto">
+            <div >
               <h2 className="text-xl font-bold">
                 Gather feedback, for discussion
               </h2>
