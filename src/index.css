@@ -24,16 +24,17 @@ body {
   @apply bg-white rounded-full border-b border-gray-300  md:!px-6 !px-4 py-2 shadow !drop-shadow-sm flex items-center justify-between sm:flex-row flex-row-reverse gap-4;
 }
 
-section {
-  @apply px-4 py-20;
-}
 
 button {
   @apply flex items-center justify-center gap-2 text-sm px-4 py-2.5 font-medium rounded-full;
 }
 
 .box {
-  @apply max-w-7xl md:px-0 px-4 w-full mx-auto;
+  @apply max-w-6xl md:px-0 px-4 w-full mx-auto;
+}
+
+.btn {
+  @apply flex items-center justify-center gap-2 text-sm px-4 py-2.5 font-medium rounded-full
 }
 
 .primary-btn {
@@ -44,14 +45,23 @@ button {
   @apply border border-neutral-600;
 }
 
+.zigzag::before,
+.zigzag::after {
+  content: "";
+  width: 100%;
+  height: 50%;
+
+  -webkit-mask-image: url("/images/zigzag.svg");
+  position: absolute;
+  @apply bg-white;
+}
+
 .zigzag::before {
- content: "";
- width: 100%;
- height: 50px;
- background-color: rgb(239, 129, 11);
- -webkit-mask-image: url("/images/zigzag.svg");
- position: absolute;
- top: 0;
+  top: 0;
+}
+
+.zigzag::after {
+  bottom: 0;
 }
 
 /* xl:px-12 lg:px-10 md:px-8 sm:px-6 px-4 */

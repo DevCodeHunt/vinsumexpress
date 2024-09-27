@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import ROUTES from "./utils/routes";
 import ScrollToTop from "./components/ScrollToTop";
 import { Toaster } from "react-hot-toast";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/career" element={<Career />} />
         <Route path={ROUTES.CONTACT} element={<Contact />} />
       </Routes>
+      <Footer />
       <ScrollToTop />
       <Toaster
         toastOptions={{
@@ -25,5 +27,3 @@ export default function App() {
     </>
   );
 }
-
-

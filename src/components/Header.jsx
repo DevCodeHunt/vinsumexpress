@@ -108,7 +108,6 @@ const DesktopDropDownItems = ({ items, depthLevel }) => {
       {items.url && items.submenu ? (
         <>
           <p
-            type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
             className="flex items-center gap-2 text-primary hover:text-primary transition"
@@ -131,7 +130,6 @@ const DesktopDropDownItems = ({ items, depthLevel }) => {
       ) : !items.url && items.submenu ? (
         <>
           <p
-            type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
             className={`flex items-center gap-2 hover:text-primary transition ${
@@ -169,7 +167,7 @@ const Dropdown = ({ submenus, dropdown, depthLevel }) => {
   depthLevel = depthLevel + 1;
   const dropdownClass =
     depthLevel > 1
-      ? "absolute left-full -top-2 before:w-4 before:h-4 before:absolute before:bg-white before:top-4 before:-left-2 z-0 before:-rotate-45 before:border-gray-300 before:border before:border-b-0 before:border-r-0"
+      ? "absolute left-full -top-2 before:w-4 before:h-4 before:absolute before:bg-white before:top-4 before:-left-2 z-0 before:-rotate-[45deg] before:border-gray-300 before:border before:border-b-0 before:border-r-0"
       : "";
 
   return (
@@ -222,7 +220,7 @@ const MobileMenu = ({ open, setOpen }) => {
         <div className="flex items-center flex-col gap-4 px-4 mt-4 pb-6">
           <Link
             to="/branch-locator"
-            className="flex items-center space-x-2 w-full justify-center border px-4 py-2.5 rounded-full text-primary border-primary font-medium"
+            className="bg-black text-white btn w-full"
           >
             <Building2 />
             <span>Branch Locator</span>
@@ -230,7 +228,7 @@ const MobileMenu = ({ open, setOpen }) => {
 
           <Link
             to="/track-shipmen"
-            className="flex items-center space-x-2 bg-primary text-white px-4 py-2.5 rounded-full w-full text-center justify-center"
+            className="w-full btn outline-btn"
           >
             <Truck />
             <span>Track</span>
@@ -256,8 +254,7 @@ const MobileDropDownItems = ({ items, depthLevel, setOpen }) => {
     <li className="relative list-none">
       {items.url && items.submenu ? (
         <>
-          <button
-            type="button"
+          <p
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => {
@@ -274,7 +271,7 @@ const MobileDropDownItems = ({ items, depthLevel, setOpen }) => {
             ) : (
               <i className="fa-solid fa-caret-down text-xs"></i>
             )}
-          </button>
+          </p>
           <MobileDropDown
             depthLevel={depthLevel}
             submenus={items.submenu}
@@ -283,8 +280,7 @@ const MobileDropDownItems = ({ items, depthLevel, setOpen }) => {
         </>
       ) : !items.url && items.submenu ? (
         <>
-          <button
-            type="button"
+          <p
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
             onClick={handleToggleDropdown}
@@ -300,7 +296,7 @@ const MobileDropDownItems = ({ items, depthLevel, setOpen }) => {
             ) : (
               <i className="fa-solid fa-caret-right text-xs"></i>
             )}
-          </button>
+          </p>
           <MobileDropDown
             depthLevel={depthLevel}
             submenus={items.submenu}

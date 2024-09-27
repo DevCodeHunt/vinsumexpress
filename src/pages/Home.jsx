@@ -1,4 +1,4 @@
-import { ArrowRight, MousePointer, Play } from "lucide-react";
+import { ArrowRight, Play, Quote } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -7,12 +7,19 @@ import { clients } from "../constants";
 const Home = () => {
   return (
     <>
-      <section className="pt-40">
+      <section className="pt-40 px-4 ">
         <div className="box flex flex-col items-center justify-center">
           <h1 className="xl:text-6xl lg:text-5xl sm:text-4xl text-3xl font-bold !leading-tight text-center">
-            Give your team the freedom <br className="sm:inline-block hidden" />{" "}
-            to be more creative
+            <span className="text-primary">V</span>
+            <span>ersatile</span> <span className="text-primary">I</span>
+            <span>ntegrated</span> <span className="text-primary">N</span>
+            <span>ationwide</span> <br className="md:block hidden" />
+            <span className="text-primary">S</span>
+            <span>ervices</span> <span className="text-primary">U</span>
+            <span>nder</span> <span className="text-primary">M</span>
+            <span>obility</span>
           </h1>
+
           <p className="text-center max-w-xl my-2 font-medium text-gray-600 sm:text-base text-sm">
             With our intuitive interface and powerful design features, your team
             can explore endless possibilities and push the boundaries of design.
@@ -46,7 +53,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section className="py-24 px-4 ">
         <div className="box relative rounded-xl !px-8  bg-gradient-to-r bg-blue-700 to-blue-200 text-white h-fit flex xl:flex-row flex-col ">
           <div className="max-w-[400px] w-full py-12">
             <ul className="list-disc px-6 space-y-4 list-outside marker:text-primary">
@@ -120,7 +127,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="space-y-6">
+      <section className="space-y-6 px-4 py-8 xl:pt-36 pb-24">
         <div className="box">
           <Swiper
             spaceBetween={20}
@@ -160,15 +167,31 @@ const Home = () => {
         <div className="box bg-indigo-color min-h-72"></div>
       </section>
 
-      <section>
-        <div className="box rounded-xl bg-secondary h-72"></div>
+      <section className="pb-24 px-4 ">
+        <div className="box rounded-xl text-white bg-secondary md:h-[320px] flex md:flex-row flex-col">
+          <div className="md:w-1/2 p-4 py-6 ">
+            <h1 className="sm:text-2xl text-xl font-semibold">
+              Build collaboration with <br /> your dedicated design Team
+            </h1>
 
-        <div className="box h-16 w-full mt-4 bg-[#DD66C3]  relative"></div>
-      </section>
+            <p className="my-4 text-sm max-w-sm">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+              vitae sit earum adipisci maxime molestiae ab at tenetur voluptas
+              veniam!
+            </p>
 
-      <section className="py-8">
-        <div className="box grid grid-cols-2 gap-4">
-          <div className="rounded-xl bg-white p-4 h-auto">
+            <p className="text-sm max-w-sm mt-12">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+              eligendi aspernatur perspiciatis modi expedita enim nostrum alias
+              nemo nobis omnis?
+            </p>
+          </div>
+
+          <div className="md:w-1/2 w-full"></div>
+        </div>
+
+        <div className="box grid md:grid-cols-2 gap-4 my-8">
+          <div className="rounded-xl bg-white shadow drop-shadow-md p-4 h-auto">
             <div>
               <h2 className="text-xl font-bold">
                 Gather feedback, for discussion
@@ -192,7 +215,7 @@ const Home = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <div className="relative rounded-xl h-full bg-white p-4">
+            <div className="relative rounded-xl h-full bg-white p-4 shadow drop-shadow-md">
               <h2 className="text-xl font-bold">
                 All This Power with No Coding Necessary
               </h2>
@@ -201,13 +224,71 @@ const Home = () => {
                 quibusdam aliquam possimus repellendus quae in saepe asperiores
                 eum ad laborum.
               </p>
-              <MousePointer className="absolute right-20 bottom-4 text-indigo-color" />
             </div>
+          </div>
+        </div>
 
-            <div className="bg-purple-500 h-full"></div>
+        <div className="bg-[#7F50E3] grid grid-cols-2 gap-4 !px-6 py-8 text-white pb-14 box rounded-xl rounded-tl-[3rem] my-8">
+          <div className="space-y-4">
+            <h1 className="sm:text-2xl text-xl font-semibold">
+              Create a prototype to <br />
+              simulate the real thing
+            </h1>
+            <p className="text-sm max-w-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
+              officiis sunt deserunt eaque vero doloribus aspernatur illum harum
+              blanditiis dignissimos adipisci minus ex voluptate culpa ut
+              possimus fugit asperiores nostrum, nam soluta dolor. Repellendus
+              aliquam dolore architecto assumenda. Amet quod illum doloribus
+              saepe commodi similique earum iure, beatae omnis facere!
+            </p>
+            <button className="border border-white">Refreence</button>
+          </div>
+
+          <p className="text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            corporis molestias est eligendi, error nisi, delectus ab in ullam
+            blanditiis optio vel quam qui, earum libero voluptatem laborum
+            consectetur doloribus!
+          </p>
+        </div>
+
+        <div className="box bg-white shadow drop-shadow-md rounded-xl !px-4 py-6">
+          <div className="w-1/2">
+            <h1 className="text-xl font-bold">
+              Pre-made templates created by our experts, you can get going
+              quickly
+            </h1>
+            <p className="text-sm opacity-70 mt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              asperiores ratione nemo quasi at, perferendis aliquid quis
+              eligendi odio ducimus?
+            </p>
           </div>
         </div>
       </section>
+
+      <div className="bg-[#4C3087] relative text-white overflow-hidden px-4">
+        <div className="box py-20 !px-4">
+          <Quote className="mb-2 text-yellow-400 rotate-180" />
+          <p className="max-w-2xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
+            blanditiis recusandae neque provident deleniti consectetur minus ex
+            iste, voluptate laudantium ab ut molestias quas nemo voluptatum
+            minima, sunt excepturi laborum amet. Sint iusto excepturi quam sed,
+            enim nisi totam quidem ullam sit voluptatibus nam unde repudiandae
+            alias quis aspernatur tempore?
+          </p>
+
+          <p className="mt-14 text-sm opacity-80">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </p>
+        </div>
+
+        <div className="w-48 h-48 border-8 border-dashed rounded-full absolute -top-14 -left-14 z-10">
+          <div className="w-40 h-40 bg-primary absolute -top-6 -left-6 rounded-full border-[0.8rem] border-white"></div>
+        </div>
+      </div>
     </>
   );
 };
