@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { clients } from "../constants";
+import Statistics from "../components/Home/Statistics";
 
 const Home = () => {
   return (
@@ -126,6 +127,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <Statistics />
 
       <section className="space-y-6 px-4 py-8 xl:pt-36 pb-24">
         <div className="box">

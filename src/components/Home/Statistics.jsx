@@ -169,6 +169,7 @@ const StatisticCard = ({ title, value, prefix, suffix, des, badge }) => {
   // eslint-disable-next-line no-unused-vars
   const [start, setStart] = useState(0);
 
+
   useEffect(() => {
     setStart(value);
   }, [value]);
