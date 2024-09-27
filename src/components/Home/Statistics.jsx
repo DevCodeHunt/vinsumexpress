@@ -52,9 +52,9 @@ const Statistics = () => {
           <div className="flex sm:items-center justify-between sm:flex-row flex-col sm:gap-0 gap-4 w-full p-4 border-b">
             <h4 className="font-bold sm:text-lg">Demographics Report</h4>
             <div className="flex items-center gap-2 flex-wrap">
-              <button className="flex items-center  border w-10 h-10 justify-center rounded-full">
-                <Search size={18} className="text-gray-600" />
-              </button>
+              <div className="border justify-center rounded-full flex items-center w-10 h-10 cursor-pointer">
+                <Search size={18}  className="text-gray-600" />
+              </div>
               <button className="flex items-center justify-center text-sm gap-2 border p-2 rounded-full px-3 text-gray-800">
                 <ArrowLeftRight size={18} className="text-gray-600" />
                 Customize
