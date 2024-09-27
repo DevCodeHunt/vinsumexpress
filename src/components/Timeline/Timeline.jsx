@@ -17,6 +17,7 @@ const Timeline = () => {
           />
         </svg>
       </div>
+     
     </div>
   );
 };

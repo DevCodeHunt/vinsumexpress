@@ -1,40 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer {
-  *,
-  *::before,
-  *::after {
-    @apply m-0 p-0 box-border;
-  }
-
-  html {
-    @apply scroll-smooth;
-  }
-
-  body {
-    @apply w-full h-full overflow-x-hidden bg-[#EBEEE9]/30;
-  }
-
-  .navbar {
-    @apply w-full sticky top-0 left-0 bg-white border-b border-gray-300 z-50 px-4 shadow !drop-shadow-sm;
-  }
-
-  section {
-    @apply py-20 px-4;
-  }
-
-  button {
-    @apply rounded-md flex items-center justify-center gap-2 text-sm px-4 py-2;
-  }
-
-  .box {
-    @apply xl:px-12 lg:px-10 md:px-8 sm:px-6 px-4 w-full mx-auto;
-  }
-
+*,
+*::before,
+*::after {
+  @apply m-0 p-0 box-border;
 }
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply w-full h-full overflow-x-hidden bg-forground;
+}
+
+.navbar {
+  @apply bg-white rounded-full border-b border-gray-300  md:!px-6 !px-4 py-2 shadow !drop-shadow-sm flex items-center justify-between sm:flex-row flex-row-reverse gap-4;
+}
+
+section {
+  @apply px-4;
+}
+
+button {
+  @apply flex items-center justify-center gap-2 text-sm px-4 py-2.5 font-medium rounded-full;
+}
+
+.box {
+  @apply max-w-7xl md:px-0 px-4 w-full mx-auto;
+}
+
+.primary-btn {
+  @apply bg-primary text-white;
+}
+
+.outline-btn {
+  @apply border border-neutral-600;
+}
+
+.zigzag::before {
+ content: "";
+ width: 100%;
+ height: 50px;
+ background-color: rgb(239, 129, 11);
+ -webkit-mask-image: url("/images/zigzag.svg");
+ position: absolute;
+ top: 0;
+}
+
+/* xl:px-12 lg:px-10 md:px-8 sm:px-6 px-4 */

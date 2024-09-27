@@ -2,6 +2,7 @@ import { AlignJustify, Building2, Truck, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { menuItemsData } from "../constants";
 import { useCallback, useEffect, useRef, useState } from "react";
+import Logo from "./Logo";
 
 const Header = () => {
   const { pathname } = useLocation();
@@ -16,19 +17,15 @@ const Header = () => {
 
   return (
     <>
-      <header
-        className={`navbar`}
-      >
-        <div className="flex items-center justify-between sm:flex-row flex-row-reverse py-2 gap-4 box">
+      <header className={`fixed top-6 left-1/2 -translate-x-1/2 px-4 w-full z-50`}>
+        <div className="navbar box ">
           <button onClick={handleToggleMenu} className="xl:hidden inline">
             <AlignJustify size={28} />
           </button>
-          <Link to="/">
-            <img src="/images/logo.svg" alt="logo" className="md:w-48 w-40" />
-          </Link>
+          <Logo />
           {/* Desktop */}
           <nav className="xl:block hidden">
-            <ul className="flex items-center space-x-6 list-none">
+            <ul className="flex items-center gap-6 list-none">
               {menuItemsData.map((menu, index) => {
                 return (
                   <DesktopDropDownItems
@@ -42,11 +39,11 @@ const Header = () => {
           </nav>
 
           <div className="sm:flex hidden items-center gap-4">
-            <button className="border px-4 py-2 rounded-full border-neutral-400 hover:bg-primary hover:text-white hover:border-0 transition duration-300 ease-in-out">
+            <button className="bg-black text-white">
               <Building2 size={20} />
               Branch Locator
             </button>
-            <button className="bg-primary text-white px-4 py-2 rounded-full">
+            <button className="outline-btn hover:bg-black hover:text-white transition duration-300">
               <Truck size={20} />
               Track
             </button>
@@ -102,7 +99,7 @@ const DesktopDropDownItems = ({ items, depthLevel }) => {
 
   return (
     <li
-      className="relative"
+      className="relative font-medium font-lato cursor-pointer"
       ref={ref}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
@@ -110,7 +107,7 @@ const DesktopDropDownItems = ({ items, depthLevel }) => {
     >
       {items.url && items.submenu ? (
         <>
-          <button
+          <p
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
@@ -124,7 +121,7 @@ const DesktopDropDownItems = ({ items, depthLevel }) => {
             ) : (
               <i className="fa-solid fa-caret-down text-xs"></i>
             )}
-          </button>
+          </p>
           <Dropdown
             depthLevel={depthLevel}
             submenus={items.submenu}
@@ -133,7 +130,7 @@ const DesktopDropDownItems = ({ items, depthLevel }) => {
         </>
       ) : !items.url && items.submenu ? (
         <>
-          <button
+          <p
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
@@ -147,7 +144,7 @@ const DesktopDropDownItems = ({ items, depthLevel }) => {
             ) : (
               <i className="fa-solid fa-caret-down text-xs"></i>
             )}
-          </button>
+          </p>
           <Dropdown
             depthLevel={depthLevel}
             submenus={items.submenu}
