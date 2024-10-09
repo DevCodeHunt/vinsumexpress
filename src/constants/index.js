@@ -1,5 +1,13 @@
 import ROUTES from "../utils/routes";
 
+export const social = {
+  instagram: "https://www.instagram.com/vinsumaxpress?igsh=cHZudWkycjRxbWpv",
+  facebook: "https://www.facebook.com/share/VBhwN2RJxduTKbNh/?mibextid=WC7FNe",
+  twitter: "https://x.com/vinsum_",
+  linkedin: "https://www.linkedin.com/company/vinsum-axpress",
+  youtube: "www.youtube.com/@vinsumaxpressindiapvtltd.8044",
+};
+
 export const menuItemsData = [
   {
     url: "/",
@@ -204,15 +212,13 @@ export const openings = [
 
 export const clients = [
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/cnh-industrial-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/cnh-industrial-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/escorts-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/sonalika-international-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/sonalika-international-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/mahindra-logo.png",
@@ -221,8 +227,7 @@ export const clients = [
     logo: "https://vinsumaxpress.com/assets/img/clients/john-deere-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/gkn-driveline-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/gkn-driveline-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/mahle-logo.png",
@@ -234,8 +239,7 @@ export const clients = [
     logo: "https://vinsumaxpress.com/assets/img/clients/brembo-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/rane-expanding-horizons-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/rane-expanding-horizons-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/anand-logo.png",
@@ -244,8 +248,7 @@ export const clients = [
     logo: "https://vinsumaxpress.com/assets/img/clients/m-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/akc-kunstocom-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/akc-kunstocom-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/continental-logo.png",
@@ -254,12 +257,10 @@ export const clients = [
     logo: "https://vinsumaxpress.com/assets/img/clients/bajaj-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/cosmos-infotech-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/cosmos-infotech-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/panacea-biotec-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/panacea-biotec-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/yamaha-logo.png",
@@ -271,41 +272,34 @@ export const clients = [
     logo: "https://vinsumaxpress.com/assets/img/clients/spark-minda-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/gkn-driveline-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/gkn-driveline-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/federal-mogul-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/federal-mogul-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/cosmos-infotech-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/cosmos-infotech-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/panacea-biotec-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/panacea-biotec-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/vardhman-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/serum-institute-of-india-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/serum-institute-of-india-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/winsome-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/cnh-industrial-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/cnh-industrial-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/escorts-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/sonalika-international-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/sonalika-international-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/mahindra-logo.png",
@@ -314,8 +308,7 @@ export const clients = [
     logo: "https://vinsumaxpress.com/assets/img/clients/john-deere-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/gkn-driveline-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/gkn-driveline-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/mahle-logo.png",
@@ -327,8 +320,7 @@ export const clients = [
     logo: "https://vinsumaxpress.com/assets/img/clients/brembo-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/rane-expanding-horizons-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/rane-expanding-horizons-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/anand-logo.png",
@@ -337,8 +329,7 @@ export const clients = [
     logo: "https://vinsumaxpress.com/assets/img/clients/m-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/akc-kunstocom-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/akc-kunstocom-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/continental-logo.png",
@@ -347,12 +338,10 @@ export const clients = [
     logo: "https://vinsumaxpress.com/assets/img/clients/bajaj-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/cosmos-infotech-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/cosmos-infotech-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/panacea-biotec-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/panacea-biotec-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/yamaha-logo.png",
@@ -364,41 +353,34 @@ export const clients = [
     logo: "https://vinsumaxpress.com/assets/img/clients/spark-minda-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/gkn-driveline-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/gkn-driveline-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/federal-mogul-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/federal-mogul-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/cosmos-infotech-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/cosmos-infotech-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/panacea-biotec-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/panacea-biotec-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/vardhman-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/serum-institute-of-india-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/serum-institute-of-india-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/winsome-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/cnh-industrial-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/cnh-industrial-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/escorts-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/sonalika-international-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/sonalika-international-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/mahindra-logo.png",
@@ -407,8 +389,7 @@ export const clients = [
     logo: "https://vinsumaxpress.com/assets/img/clients/john-deere-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/gkn-driveline-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/gkn-driveline-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/mahle-logo.png",
@@ -420,8 +401,7 @@ export const clients = [
     logo: "https://vinsumaxpress.com/assets/img/clients/brembo-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/rane-expanding-horizons-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/rane-expanding-horizons-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/anand-logo.png",
@@ -430,8 +410,7 @@ export const clients = [
     logo: "https://vinsumaxpress.com/assets/img/clients/m-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/akc-kunstocom-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/akc-kunstocom-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/continental-logo.png",
@@ -440,12 +419,10 @@ export const clients = [
     logo: "https://vinsumaxpress.com/assets/img/clients/bajaj-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/cosmos-infotech-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/cosmos-infotech-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/panacea-biotec-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/panacea-biotec-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/yamaha-logo.png",
@@ -457,27 +434,22 @@ export const clients = [
     logo: "https://vinsumaxpress.com/assets/img/clients/spark-minda-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/gkn-driveline-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/gkn-driveline-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/federal-mogul-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/federal-mogul-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/cosmos-infotech-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/cosmos-infotech-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/panacea-biotec-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/panacea-biotec-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/vardhman-logo.png",
   },
   {
-    logo:
-      "https://vinsumaxpress.com/assets/img/clients/serum-institute-of-india-logo.png",
+    logo: "https://vinsumaxpress.com/assets/img/clients/serum-institute-of-india-logo.png",
   },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/winsome-logo.png",

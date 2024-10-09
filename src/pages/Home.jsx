@@ -95,11 +95,18 @@ const Home = () => {
 
           <div className="relative xl:flex-1 xl:py-0 pb-12 flex items-center justify-center">
             <div className="w-[300px] h-[84vh] xl:absolute -top-12 xl:left-1/2 xl:-translate-x-1/2 bg-gray-200 rounded-3xl z-10 mx-auto translate-x-0">
-              <img
-                src="https://cdn.pixabay.com/photo/2024/09/02/15/06/sunset-9017041_1280.jpg"
-                alt="mobile"
+              <video
+                muted
+                loop
+                autoPlay
+                title="Video Indroduction"
                 className="w-full h-full rounded-3xl object-cover absolute inset-0 z-[1]"
-              />
+              >
+                <source
+                  src="/videos/vinsum-explore.mp4"
+                  type="video/mp4"
+                ></source>
+              </video>
               {/* circle */}
               <div className="md:block hidden w-[180px] h-[180px] rounded-full bg-neutral-50 opacity-30 absolute -left-10 top-10 -z-2"></div>
               <div className="md:block hidden w-[220px] h-[220px] rounded-full bg-neutral-50 opacity-20 -z-2 absolute -left-40 bottom-4"></div>
@@ -195,7 +202,7 @@ const Home = () => {
 
         <div className="box !px-0 grid md:grid-cols-2 grid-cols-1 gap-4 my-8">
           <div className="rounded-xl bg-white w-full shadow drop-shadow-md p-4 h-auto">
-            <div >
+            <div>
               <h2 className="text-xl font-bold">
                 Gather feedback, for discussion
               </h2>

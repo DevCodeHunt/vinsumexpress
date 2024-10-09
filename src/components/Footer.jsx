@@ -1,6 +1,9 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
+import ROUTES from "../utils/routes"
+import { social } from "../constants";
+
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -58,8 +61,7 @@ const Footer = () => {
             <ul className="space-y-2 mt-2">
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to="#"
                   className="hover:text-primary transition duration-300"
                 >
                   Home
@@ -67,8 +69,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to="#"
                   className="hover:text-primary transition duration-300"
                 >
                   About us
@@ -76,8 +77,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to="#"
                   className="hover:text-primary transition duration-300"
                 >
                   Our Services
@@ -85,8 +85,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to={ROUTES.CAREER}
                   className="hover:text-primary transition duration-300"
                 >
                   Career
@@ -94,8 +93,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to="#"
                   className="hover:text-primary transition duration-300"
                 >
                   Blog
@@ -103,8 +101,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to={ROUTES.CONTACT}
                   className="hover:text-primary transition duration-300"
                 >
                   Contact
@@ -117,8 +114,7 @@ const Footer = () => {
             <ul className="space-y-2 mt-2">
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to="#"
                   className="hover:text-primary transition duration-300"
                 >
                   About us
@@ -126,8 +122,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to={ROUTES.CAREER}
                   className="hover:text-primary transition duration-300"
                 >
                   Careers
@@ -135,8 +130,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to={ROUTES.CONTACT}
                   className="hover:text-primary transition duration-300"
                 >
                   Contact
@@ -144,8 +138,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to="#"
                   className="hover:text-primary transition duration-300"
                 >
                   News
@@ -159,8 +152,7 @@ const Footer = () => {
             <ul className="space-y-2 mt-2">
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to="#"
                   className="hover:text-primary transition duration-300"
                 >
                   Blog
@@ -168,8 +160,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to="#"
                   className="hover:text-primary transition duration-300"
                 >
                   Newsletter
@@ -177,8 +168,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to="#"
                   className="hover:text-primary transition duration-300"
                 >
                   Help Center
@@ -186,8 +176,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to="#"
                   className="hover:text-primary transition duration-300"
                 >
                   Support
@@ -201,8 +190,7 @@ const Footer = () => {
             <ul className="space-y-2 mt-2">
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to="#"
                   className="hover:text-primary transition duration-300"
                 >
                   Terms
@@ -210,8 +198,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to="#"
                   className="hover:text-primary transition duration-300"
                 >
                   Privacy
@@ -219,8 +206,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to="#"
                   className="hover:text-primary transition duration-300"
                 >
                   Licenses
@@ -228,8 +214,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
-                  target="_blank"
+                  to={ROUTES.CONTACT}
                   className="hover:text-primary transition duration-300"
                 >
                   Contact
@@ -243,7 +228,16 @@ const Footer = () => {
             <ul className="space-y-2 mt-2">
               <li>
                 <a
-                  href="#"
+                  href={social.instagram}
+                  target="_blank"
+                  className="hover:text-primary transition duration-300"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href={social.twitter}
                   target="_blank"
                   className="hover:text-primary transition duration-300"
                 >
@@ -252,7 +246,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href={social.linkedin}
                   target="_blank"
                   className="hover:text-primary transition duration-300"
                 >
@@ -261,7 +255,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href={social.facebook}
                   target="_blank"
                   className="hover:text-primary transition duration-300"
                 >
@@ -270,7 +264,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href={social.youtube}
                   target="_blank"
                   className="hover:text-primary transition duration-300"
                 >
@@ -289,28 +283,35 @@ const Footer = () => {
           </p>
           <div className="flex gap-8 flex-wrap">
             <a
-              href="#"
+              href={social.instagram}
+              target="_blank"
+              className="text-lg text-white"
+            >
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href={social.facebook}
               target="_blank"
               className="text-lg text-white"
             >
               <i className="fa-brands fa-facebook-f"></i>
             </a>
             <a
-              href="#"
+              href={social.twitter}
               target="_blank"
               className="text-lg text-white"
             >
               <i className="fa-brands fa-x-twitter"></i>
             </a>
             <a
-              href="#"
+              href={social.youtube}
               target="_blank"
               className="text-lg text-white"
             >
               <i className="fa-brands fa-youtube"></i>
             </a>
             <a
-              href="#"
+              href={social.linkedin}
               target="_blank"
               className="text-white text-lg"
             >

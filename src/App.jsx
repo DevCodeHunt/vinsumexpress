@@ -7,14 +7,16 @@ import ROUTES from "./utils/routes";
 import ScrollToTop from "./components/ScrollToTop";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
+import ChatBot from "./components/ChatBot";
 
 export default function App() {
   return (
     <>
+      <ChatBot />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/career" element={<Career />} />
+        <Route path={ROUTES.CAREER} element={<Career />} />
         <Route path={ROUTES.CONTACT} element={<Contact />} />
       </Routes>
       <Footer />

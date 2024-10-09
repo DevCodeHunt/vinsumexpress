@@ -4,6 +4,8 @@ import { menuItemsData } from "../constants";
 import { useCallback, useEffect, useRef, useState } from "react";
 import Logo from "./Logo";
 
+
+
 const Header = () => {
   const { pathname } = useLocation();
   const depthLevel = 0;
@@ -51,6 +53,7 @@ const Header = () => {
         </div>
       </header>
       <MobileMenu open={open} setOpen={setOpen} />
+ 
     </>
   );
 };

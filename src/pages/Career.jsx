@@ -1,4 +1,4 @@
-import { Clock, CloudUpload, MapPin } from "lucide-react";
+import { CloudUpload } from "lucide-react";
 import { openings } from "../constants";
 import { useCallback, useEffect, useState } from "react";
 import { useDropzone } from "react-dropzone";
@@ -98,8 +98,8 @@ const Career = () => {
     formValues;
   return (
     <>
-      <section className="px-4">
-        <div className="container">
+      <section className="pt-40 pb-20 px-4">
+        <div className="box">
           <a
             href="#discover"
             className="border border-primary text-primary rounded-full py-2.5 px-3 text-sm font-medium"
@@ -117,13 +117,64 @@ const Career = () => {
         </div>
       </section>
 
-      <section id="discover" className="px-4 bg-primary/5 rounded">
-        <div className="container grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+      <section id="discover" className="px-4 pb-20 rounded">
+        <div className="box overflow-x-auto relative border rounded-xl shadow drop-shadow bg-white">
+          <table className="md:w-full w-[1100px]">
+            <thead>
+              <tr>
+                <th scope="col" className="px-6 py-3">
+                  #
+                </th>
+                <th scope="col" className="px-6 py-3">
+                  Position
+                </th>
+                <th scope="col" className="px-6 py-3">
+                  Location
+                </th>
+                <th scope="col" className="px-6 py-3">
+                  Experience
+                </th>
+                <th scope="col" className="px-6 py-3">
+                  Opening
+                </th>
+                <th scope="col" className="px-6 py-3"></th>
+              </tr>
+            </thead>
+            <tbody>
+              {openings.map((opening, index) => {
+                return (
+                  <tr key={index}>
+                    <td className="px-6 py-4">{index + 1}</td>
+                    <td className="px-6 py-4 font-medium">
+                      {opening.position}
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      {opening.location}
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      {opening.experience}
+                    </td>
+                    <td className="px-6 py-4 text-center">{opening.vacancy}</td>
+                    <td className="px-6 py-4">
+                      <a
+                        href="#apply"
+                        className="btn outline-btn whitespace-nowrap"
+                      >
+                        Apply Now
+                      </a>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+        {/* <div className="box grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
           {openings.map((opening, index) => {
             return (
               <div
                 key={index}
-                className="bg-white rounded p-4 shadow-sm hover:-translate-y-2 transition duration-500"
+                className="bg-white rounded p-4 shadow drop-shadow-md hover:-translate-y-2 transition duration-500"
               >
                 <h1 className="text-xl font-semibold">{opening.position}</h1>
                 <div className="my-4 space-y-4">
@@ -148,28 +199,28 @@ const Career = () => {
                   </div>
                 </div>
 
-                {/* <div className="mt-6 flex justify-end">
+                <div className="mt-6 flex justify-end">
                   <a
                     href="#application"
                     className="rounded-full bg-primary text-white py-2.5 px-4 font-medium"
                   >
                     Apply
                   </a>
-                </div> */}
+                </div>
               </div>
             );
           })}
-        </div>
+        </div> */}
       </section>
 
-      <section id="application" className="px-4">
+      <section id="apply" className="px-4 py-20">
         <h1 className="text-center font-bold text-4xl mb-10">
           Apply for the role
         </h1>
-        <div className="container">
+        <div className="box">
           <form
             onSubmit={handleSubmitApplication}
-            className="space-y-6 max-w-4xl w-full mx-auto"
+            className="space-y-6 max-w-4xl bg-white p-4 py-8 rounded-xl drop-shadow-md w-full mx-auto"
           >
             <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
               <Input
@@ -256,19 +307,22 @@ const Career = () => {
             <div className="bg-gray-200 rounded-lg py-4 px-2 !mt-10">
               <p className="text-center">
                 Interested canditates shall send in their detailed resume to:{" "}
-                <span className="text-primary font-medium">
+                <a
+                  href="mailto:info@vinsumaxpress.com"
+                  className="text-primary font-medium"
+                >
                   info@vinsumaxpress.com
-                </span>
+                </a>
               </p>
             </div>
           </form>
         </div>
       </section>
 
-      <section className=" px-4">
+      <section className=" py-20 px-4">
         <h1 className="text-center font-bold text-4xl mb-10">Grow With Us</h1>
-        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 ">
-          <div className="p-8 bg-white border border-gray-300 rounded-tr-[62px] rounded-bl-[62px] relative bg-gradient-to-b from-slate-50 to-primary/10">
+        <div className="box grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 ">
+          <div className="p-8 bg-white border border-gray-300 rounded-tr-[62px] rounded-bl-[62px] relative drop-shadow-md hover:drop-shadow-xl hover:shadow-xl transition duration-300">
             <h4 className="text-2xl font-bold mb-4">Why We?</h4>
             <p>
               Our sense of commitment & our dedicated & professionally managed
@@ -279,7 +333,7 @@ const Career = () => {
               trade.
             </p>
           </div>
-          <div className="p-8 bg-white border border-gray-300 rounded-tr-[62px] rounded-bl-[62px] relative bg-gradient-to-b from-slate-50 to-primary/10">
+          <div className="p-8 bg-white border border-gray-300 rounded-tr-[62px] rounded-bl-[62px] relative drop-shadow-md hover:drop-shadow-xl hover:shadow-xl transition duration-300">
             <h4 className="text-2xl font-bold mb-4">Work Culture</h4>
             <p>
               Our Work culture is the key driving force that help us align our
@@ -291,7 +345,7 @@ const Career = () => {
               business in the long run.
             </p>
           </div>
-          <div className="p-8 bg-white border border-gray-300 rounded-tr-[62px] rounded-bl-[62px] relative bg-gradient-to-b from-slate-50 to-primary/10">
+          <div className="p-8 bg-white border border-gray-300 rounded-tr-[62px] rounded-bl-[62px] relative drop-shadow-md hover:drop-shadow-xl hover:shadow-xl transition duration-300">
             <h4 className="text-2xl font-bold mb-4">
               Training And Development
             </h4>

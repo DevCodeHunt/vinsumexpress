@@ -3,6 +3,7 @@ import toast from "react-hot-toast";
 import Input from "../components/Input";
 import Textarea from "../components/Textarea";
 import Button from "../components/Button";
+import { social } from "../constants";
 
 const initialValues = {
   fullName: "",
@@ -48,8 +49,8 @@ const Contact = () => {
   const { fullName, email, subject, message } = values;
   return (
     <>
-      <section className="py-16 px-4">
-        <div className="container flex flex-col items-center justify-center gap-3">
+      <section className="py-16 pt-40 px-4">
+        <div className="box flex flex-col items-center justify-center gap-3">
           <p className="text-sm text-primary font-medium">Contact us</p>
           <h1 className="sm:text-4xl text-3xl font-bold text-center">
             Get in touch with our team
@@ -61,14 +62,14 @@ const Contact = () => {
       </section>
 
       <section className="py-16 px-4">
-        <div className="container h-[450px] flex items-center justify-center">
+        <div className="box h-[450px] flex items-center justify-center">
           <h1 className="text-xl font-bold">Map</h1>
         </div>
       </section>
 
       <section className="py-16 px-4">
-        <div className="container flex lg:flex-row flex-col gap-6">
-          <div className="lg:w-1/2 w-full">
+        <div className="box flex lg:flex-row flex-col gap-6">
+          <div className="lg:w-1/2 w-full p-4 bg-white rounded-xl shadow drop-shadow-md">
             <div>
               <h3 className="text-xl font-bold">Address</h3>
               <p className="font-medium text-gray-700">
@@ -102,29 +103,36 @@ const Contact = () => {
             <div className="my-6">
               <h3 className="text-xl font-bold">Follow Us</h3>
               <div className="flex gap-4 flex-wrap mt-2">
+              <a
+                  href={social.instagram}
+                  target="_blank"
+                  className="w-[50px] h-[50px] rounded-full flex items-center justify-center bg-[#243F2F] text-white text-lg"
+                >
+                  <i className="fa-brands fa-instagram"></i>
+                </a>
                 <a
-                  href="#"
+                  href={social.facebook}
                   target="_blank"
                   className="w-[50px] h-[50px] rounded-full flex items-center justify-center bg-[#243F2F] text-white text-lg"
                 >
                   <i className="fa-brands fa-facebook-f"></i>
                 </a>
                 <a
-                  href="#"
+                  href={social.twitter}
                   target="_blank"
                   className="w-[50px] h-[50px] rounded-full flex items-center justify-center bg-[#243F2F] text-white text-lg"
                 >
                   <i className="fa-brands fa-x-twitter"></i>
                 </a>
                 <a
-                  href="#"
+                  href={social.youtube}
                   target="_blank"
                   className="w-[50px] h-[50px] rounded-full flex items-center justify-center bg-[#243F2F] text-white text-lg"
                 >
                   <i className="fa-brands fa-youtube"></i>
                 </a>
                 <a
-                  href="#"
+                  href={social.linkedin}
                   target="_blank"
                   className="w-[50px] h-[50px] rounded-full flex items-center justify-center bg-[#243F2F] text-white text-lg"
                 >
@@ -134,7 +142,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="lg:w-1/2 w-full">
+          <div className="lg:w-1/2 w-full bg-white rounded-xl p-4 drop-shadow-md">
             <h2 className="text-4xl font-bold mb-4">Get in touch</h2>
             <p>Our friendly team would love to hear from you!</p>
 

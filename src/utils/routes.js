@@ -16,4 +16,5 @@ export default {
     LEADERSHIP_TEAM: "leadership-team",
   },
   CONTACT: "/contact-us",
+  CAREER: "/career",
 };
