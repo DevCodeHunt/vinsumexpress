@@ -37,11 +37,13 @@ const About = () => {
       <div className="box overflow-x-auto overflow-y-hidden noscrollbar">
         <div className="lg:w-full w-[1050px] flex items-center gap-6 py-3 border-b border-b-neutral-400">
           {tabs.map((tab, i) => {
-            const isActive = pathname === `${baseRoute}/${tab.path}`;
+            const fullPath = tab.path ? `${baseRoute}/${tab.path}` : baseRoute;
+            // Check active tab
+            const isActive = pathname === `/${fullPath}`;
 
             return (
               <Link
-                to={`${baseRoute}/${tab.path}`}
+                to={`${tab.path}`}
                 key={i}
                 className={`block whitespace-nowrap cursor-pointer relative before:content-[""] before:absolute before:w-full before:h-[3px] before:rounded-full before:-bottom-[14px] before:left-0 ${
                   isActive ? "before:bg-primary" : ""

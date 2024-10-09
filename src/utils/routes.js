@@ -8,8 +8,8 @@ export default {
       "four-pl-and-inplant-logistics-project-management",
   },
   ABOUT: {
-    ABOUTUS: "/about-us",
-    VINSUM_AXPRESS_HISTORY: "vinsumax-history",
+    ABOUTUS: "about-us",
+    VINSUM_AXPRESS_HISTORY: "about-us",
     MISSION_VISIONOUR_VALUES: "mission-vision-values",
     CHAIRMAAN_AND_MANAGING_DIRECTOR: "chairmains-and-managing-director",
     OUR_NETWORK: "our-network",
