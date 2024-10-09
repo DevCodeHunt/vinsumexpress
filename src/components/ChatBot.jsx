@@ -30,7 +30,6 @@ const ChatBot = () => {
       <button
         onClick={toggleChatbot}
         ref={buttonRef}
-        popovertarget="my-chatbaot"
         className="w-[52px] h-[52px] rounded-full flex items-center justify-center bg-primary/90 text-white hover:drop-shadow-xl hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer"
       >
         <MessageSquare size={26} />
@@ -38,8 +37,6 @@ const ChatBot = () => {
 
       <div
         ref={chatbotRef}
-        id="my-chatbot"
-        popover
         className={`min-h-40 absolute bottom-14 rounded-xl w-[300px] sm:right-0  -right-4 p-4 bg-white shadow drop-shadow-xl ${
           show ? "opacity-100" : "opacity-0"
         }  transition-all duration-300`}
