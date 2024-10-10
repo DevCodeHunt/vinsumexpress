@@ -22,7 +22,7 @@ import CountUp from "react-countup";
 const Statistics = () => {
   return (
     <section className="md:pt-40 px-4">
-      <div className="max-w-6xl w-full bg-white shadow drop-shadow-2xl rounded-xl  mx-auto flex border">
+      <div className="max-w-6xl  w-full bg-white shadow drop-shadow-2xl rounded-xl  mx-auto flex border">
         <div className="w-14 h-auto p-2 border-r px-2">
           <div className="w-10 h-10 bg-primary text-white flex items-center justify-center rounded-xl font-semibold text-xl mx-auto">
             V
@@ -89,7 +89,9 @@ const Statistics = () => {
             </div>
 
             <div className="flex sm:py-0 py-4">
-              <div className="flex-1 relative sm:block hidden"></div>
+              <div className="flex-1 relative sm:block hidden">
+                <img src="/images/map.png" alt="map" className="w-1/2" />
+              </div>
 
               <div className="sm:w-72 w-full sm:border-l sm:border-0 border h-full px-2 py-4 sm:rounded-none rounded-xl">
                 <h2 className="text-2xl font-bold">

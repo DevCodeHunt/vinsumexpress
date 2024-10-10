@@ -4,8 +4,13 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { clients } from "../constants";
 import Statistics from "../components/Home/Statistics";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    document.title =
+      "Logistics & Transportation Services in India. | Vinsum Axpress";
+  }, []);
   return (
     <>
       <section className="pt-40 px-4 ">

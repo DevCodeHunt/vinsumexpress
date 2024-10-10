@@ -33,7 +33,7 @@ const About = () => {
   const baseRoute = ROUTES.ABOUT.ABOUTUS;
 
   return (
-    <section className="pb-20 px-4 pt-40">
+    <section className="pb-20 px-4 pt-28">
       <div className="box overflow-x-auto overflow-y-hidden noscrollbar">
         <div className="lg:w-full w-[1050px] flex items-center gap-6 py-3 border-b border-b-neutral-400">
           {tabs.map((tab, i) => {
